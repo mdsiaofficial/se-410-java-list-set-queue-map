@@ -4,6 +4,7 @@ import java.util.*;
 public class Project1 {
     public static void main(String[] args) {
         // ! list
+        System.out.println("\nLIST\n");
         List<String> new_list = new ArrayList<>();
         new_list.add("A");
         new_list.add("B");
@@ -19,17 +20,17 @@ public class Project1 {
 
         new_list.remove(2);
         System.out.println("The list after removing the element at index 2 is: " + new_list);
+        // ! update the element at index 2 to F
         new_list.set(2, "F");
         System.out.println("The list after setting the element at index 2 to F is: " + new_list);
 
         // ! set
+        System.out.println("\nSET\n");
         Set<String> new_set = new HashSet<>();
         new_set.add("A");
         new_set.add("B");
         new_set.add("C");
-
         System.out.println("The set is: " + new_set);
-
         new_set.remove("B");
         System.out.println("The set after removing B is: " + new_set);
         new_set.add("D");
@@ -38,7 +39,6 @@ public class Project1 {
         new_set.add("E"); // ! adding duplicate element
         new_set.add("E"); // ! adding duplicate element
         System.out.println("The set after adding D, E is: " + new_set);
-
         new_set.remove("C");
         System.out.println("The set after removing C is: " + new_set);
         new_set.remove("A");  // remove old
@@ -47,6 +47,7 @@ public class Project1 {
 
 
         // ! queue
+        System.out.println("\nQUEUE\n");
         Queue<String> new_queue = new LinkedList<>();
         new_queue.add("A");
         new_queue.add("B");
@@ -65,6 +66,7 @@ public class Project1 {
 
 
         // ! map
+        System.out.println("\nMAP\n");
         Map<Integer, String> new_map = new HashMap<>();
         new_map.put(1, "A");
         new_map.put(2, "B");
@@ -79,6 +81,7 @@ public class Project1 {
         System.out.println("The map after removing the element with key 3 is: " + new_map);
         new_map.put(1, "F");
         System.out.println("The map after setting the value of key 1 to F is: " + new_map);
+        // ! set the value of key 4 to G
         new_map.put(4, "G");
         System.out.println("The map after setting the value of key 4 to G is: " + new_map);
     }
